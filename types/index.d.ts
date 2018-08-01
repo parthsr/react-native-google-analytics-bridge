@@ -199,6 +199,12 @@ export class GoogleAnalyticsTracker {
     setClient(clientId: string): void
 
     /**
+     * Gets the current clientId for tracking.
+     * @returns {Promise<string>} Returns when done
+     */
+    getClientId(): Promise<string>
+
+    /**
      * Sets if IDFA (identifier for advertisers) collection should be enabled
      * @param  {Boolean} enabled Defaults to true
      */
